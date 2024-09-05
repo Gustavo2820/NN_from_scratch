@@ -9,7 +9,7 @@ This repository contains an implementation of a neural network built from scratc
 ## Requirements
 Before running the project, ensure you have the following dependencies installed:
 ```bash
-pip install numpy
+pip install numpy```
 
 Additionally, you will need to manually download the MNIST dataset since it is too large to be uploaded to this repository.Download the MNIST dataset:
 1.Download the MNIST dataset:
