@@ -19,7 +19,7 @@ Additionally, you will need to manually download the MNIST dataset since it is t
 ## Getting Started
 
 1. **Clone the repository:**
-   git clone https://github.com/yourusername/NN_from_scratch.git
+   git clone https://github.com/Gustavo2820/NN_from_scratch.git
    cd NN_from_scratch
 
 2. **Run:**
