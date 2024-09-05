@@ -7,8 +7,12 @@ This repository contains an implementation of a neural network built from scratc
 - Supports multiple hidden layers and activation functions.
 
 ## Requirements
-Before running the project, ensure you have the following dependencies installed:
+Before running the project, ensure you have the following dependencies installed: numpy
+
+Install using:
+```bash
 pip install numpy
+```
 
 Additionally, you will need to manually download the MNIST dataset since it is too large to be uploaded to this repository.
 
@@ -19,11 +23,15 @@ Additionally, you will need to manually download the MNIST dataset since it is t
 ## Getting Started
 
 1. **Clone the repository:**
+```bash
    git clone https://github.com/Gustavo2820/NN_from_scratch.git
    cd NN_from_scratch
+```
 
 2. **Run:**
+```bash
    python main.py
+```
 
 3. **Configuration:**
    You can configure the following parameters in the `main.py` file:
