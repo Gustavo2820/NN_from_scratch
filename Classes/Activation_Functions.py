@@ -22,18 +22,3 @@ class Sigmoid:
         sigmoid = 1 / (1 + np.exp(-z))  # Calculate sigmoid(z) again
         dZ = dA * sigmoid * (1 - sigmoid)  # Derivative of sigmoid
         return dZ  # Return the gradient to propagate it backward
-
-
-class Softmax:
-    def forward(self, z):
-        e_z = np.exp(z - np.max(z, axis=1, keepdims=True))
-        self.softmax_probs = e_z / np.sum(e_z, axis=1, keepdims=True)
-        return self.softmax_probs
-    
-    def backward(self, dA, y_true):
-        batch_size = y_true.shape[0]
-        dZ = self.softmax_probs.copy()
-        y_true_indices = np.argmax(y_true, axis=1)
-        dZ[np.arange(batch_size), y_true_indices] -= 1
-        dZ /= batch_size
-        return dZ
